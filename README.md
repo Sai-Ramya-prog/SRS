@@ -28,11 +28,28 @@ Smart Resume Screener is a company/HR-side tool that allows recruiters to upload
 | Backend | FastAPI (Python) |
 | Frontend | React |
 | Database | Supabase (PostgreSQL) |
-| LLM | Gemini 1.5 Flash (Google Generative AI) |
+| LLM | Gemini 3.6 Flash (Google Generative AI) |
 | PDF Parsing | pdfplumber |
 | HTTP Client | Axios |
 
 ---
+
+## 🏛️ Architecture
+
+![Smart Resume Screener — System Architecture](./architecture.svg)
+
+### Key Design Decisions
+
+| Decision | Reason |
+|---|---|
+| Background tasks via `asyncio.to_thread` | PDF parsing and Gemini calls are blocking I/O; offloading keeps the FastAPI event loop free |
+| 4-second pacing between resumes | Gemini free-tier rate limits (429 quota); prevents batch failures |
+| Two-prompt pipeline (parse → match) | Separation of concerns — parsing and scoring are independent, each with its own structured output |
+| Frontend polls `/status` every 2s | Avoids WebSocket complexity while still giving live feedback |
+| Raw text saved to DB before Gemini call | Allows re-screening the same resume against a different JD without re-uploading |
+
+---
+
 
 ## ✅ Functional Requirements
 

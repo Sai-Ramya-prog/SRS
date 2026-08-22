@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720" width="900" height="720" font-family="Inter, Segoe UI, Arial, sans-serif">
+  <!-- Background -->
+  <rect width="900" height="720" fill="#F8F9FC" rx="12"/>
+
+  <!-- ── HR User ── -->
+  <rect x="350" y="20" width="200" height="56" rx="28" fill="#1C1815" filter="url(#shadow)"/>
+  <text x="450" y="50" text-anchor="middle" fill="#FAF8F3" font-size="13" font-weight="700" letter-spacing="0.5">👤  HR / Recruiter</text>
+
+  <!-- Arrow: HR → Frontend -->
+  <line x1="450" y1="76" x2="450" y2="108" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="455" y="96" fill="#64748B" font-size="10">JD · Resumes</text>
+
+  <!-- ── React Frontend ── -->
+  <rect x="40" y="114" width="820" height="90" rx="10" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="136" fill="#1D4ED8" font-size="11" font-weight="700" letter-spacing="1">REACT FRONTEND  (Vite)</text>
+  <!-- Page boxes -->
+  <rect x="60" y="144" width="168" height="48" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="144" y="163" text-anchor="middle" fill="#1E40AF" font-size="11" font-weight="600">Create JD</text>
+  <text x="144" y="179" text-anchor="middle" fill="#3B82F6" font-size="9">/jd</text>
+
+  <rect x="244" y="144" width="168" height="48" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="328" y="163" text-anchor="middle" fill="#1E40AF" font-size="11" font-weight="600">Upload Resumes</text>
+  <text x="328" y="179" text-anchor="middle" fill="#3B82F6" font-size="9">/upload/:jd_id</text>
+
+  <rect x="428" y="144" width="200" height="48" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="528" y="163" text-anchor="middle" fill="#1E40AF" font-size="11" font-weight="600">Screening &amp; Results</text>
+  <text x="528" y="179" text-anchor="middle" fill="#3B82F6" font-size="9">/screening/:jd_id</text>
+
+  <rect x="644" y="144" width="196" height="48" rx="6" fill="#DBEAFE" stroke="#93C5FD" stroke-width="1"/>
+  <text x="742" y="163" text-anchor="middle" fill="#1E40AF" font-size="11" font-weight="600">Shortlisted</text>
+  <text x="742" y="179" text-anchor="middle" fill="#3B82F6" font-size="9">/shortlisted/:jd_id</text>
+
+  <!-- Arrows: Frontend → Backend -->
+  <line x1="144" y1="204" x2="200" y2="242" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="328" y1="204" x2="310" y2="242" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="528" y1="204" x2="500" y2="242" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="742" y1="204" x2="700" y2="242" stroke="#94A3B8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Poll arrow -->
+  <path d="M528 204 Q560 228 530 242" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowAmber)"/>
+  <text x="575" y="224" fill="#B45309" font-size="9">polls /status every 2s</text>
+
+  <!-- ── FastAPI Backend ── -->
+  <rect x="40" y="248" width="820" height="210" rx="10" fill="#1E293B" stroke="#334155" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="270" fill="#94A3B8" font-size="11" font-weight="700" letter-spacing="1">FASTAPI BACKEND</text>
+
+  <!-- Route boxes -->
+  <rect x="60" y="278" width="224" height="48" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="172" y="297" text-anchor="middle" fill="#7DD3FC" font-size="11" font-weight="600">POST /api/jd/create</text>
+  <text x="172" y="313" text-anchor="middle" fill="#38BDF8" font-size="9">POST /api/jd/upload  ·  GET /api/jd</text>
+
+  <rect x="300" y="278" width="224" height="48" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="412" y="297" text-anchor="middle" fill="#7DD3FC" font-size="11" font-weight="600">POST /api/resume/upload</text>
+  <text x="412" y="313" text-anchor="middle" fill="#38BDF8" font-size="9">GET /api/resume/status/:jd_id</text>
+
+  <rect x="540" y="278" width="280" height="48" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1"/>
+  <text x="680" y="297" text-anchor="middle" fill="#7DD3FC" font-size="11" font-weight="600">GET /api/screening/results</text>
+  <text x="680" y="313" text-anchor="middle" fill="#38BDF8" font-size="9">PATCH /api/screening/:id/status  ·  GET /shortlisted</text>
+
+  <!-- Services Layer inner box -->
+  <rect x="60" y="342" width="760" height="100" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <text x="80" y="361" fill="#64748B" font-size="10" font-weight="700" letter-spacing="1">SERVICES LAYER</text>
+
+  <rect x="80" y="368" width="220" height="60" rx="6" fill="#1E293B" stroke="#4A5D36" stroke-width="1.5"/>
+  <text x="190" y="389" text-anchor="middle" fill="#86EFAC" font-size="11" font-weight="600">pdf_parser.py</text>
+  <text x="190" y="406" text-anchor="middle" fill="#4ADE80" font-size="9">pdfplumber  ·  extracts raw text</text>
+
+  <rect x="330" y="368" width="240" height="60" rx="6" fill="#1E293B" stroke="#7C3AED" stroke-width="1.5"/>
+  <text x="450" y="389" text-anchor="middle" fill="#C4B5FD" font-size="11" font-weight="600">gemini_service.py</text>
+  <text x="450" y="406" text-anchor="middle" fill="#A78BFA" font-size="9">Prompt 1 (parse)  ·  Prompt 2 (match)</text>
+
+  <rect x="600" y="368" width="220" height="60" rx="6" fill="#1E293B" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="710" y="389" text-anchor="middle" fill="#FCD34D" font-size="11" font-weight="600">screening_service.py</text>
+  <text x="710" y="406" text-anchor="middle" fill="#FBBF24" font-size="9">Background Worker  ·  asyncio.to_thread</text>
+
+  <!-- Arrows inside backend -->
+  <line x1="412" y1="326" x2="710" y2="342" stroke="#64748B" stroke-width="1.2" marker-end="url(#arrowGray)"/>
+  <line x1="172" y1="326" x2="172" y2="490" stroke="#64748B" stroke-width="1.2" marker-end="url(#arrowGray)"/>
+
+  <!-- Arrow: screening_service → pdf_parser -->
+  <line x1="640" y1="398" x2="300" y2="398" stroke="#94A3B8" stroke-width="1.2" marker-end="url(#arrowGray)"/>
+  <!-- Arrow: pdf_parser → gemini_service -->
+  <line x1="300" y1="410" x2="330" y2="410" stroke="#94A3B8" stroke-width="1.2" marker-end="url(#arrowGray)"/>
+  <text x="305" y="408" fill="#94A3B8" font-size="8">raw text</text>
+
+  <!-- Arrows: Backend → Gemini + DB -->
+  <line x1="450" y1="458" x2="260" y2="524" stroke="#A78BFA" stroke-width="1.5" marker-end="url(#arrowPurple)"/>
+  <line x1="172" y1="490" x2="172" y2="524" stroke="#6EE7B7" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="450" y1="458" x2="600" y2="524" stroke="#6EE7B7" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <line x1="680" y1="458" x2="680" y2="524" stroke="#6EE7B7" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- ── Gemini AI ── -->
+  <rect x="40" y="530" width="360" height="140" rx="10" fill="#FAF5FF" stroke="#DDD6FE" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="60" y="552" fill="#7C3AED" font-size="11" font-weight="700" letter-spacing="1">GOOGLE GEMINI AI</text>
+
+  <rect x="60" y="560" width="150" height="90" rx="6" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="135" y="585" text-anchor="middle" fill="#6D28D9" font-size="11" font-weight="600">Prompt 1</text>
+  <text x="135" y="601" text-anchor="middle" fill="#7C3AED" font-size="9">Resume Parsing</text>
+  <text x="135" y="617" text-anchor="middle" fill="#8B5CF6" font-size="8">→ structured JSON</text>
+
+  <rect x="225" y="560" width="155" height="90" rx="6" fill="#EDE9FE" stroke="#C4B5FD" stroke-width="1"/>
+  <text x="302" y="585" text-anchor="middle" fill="#6D28D9" font-size="11" font-weight="600">Prompt 2</text>
+  <text x="302" y="601" text-anchor="middle" fill="#7C3AED" font-size="9">JD Matching &amp; Scoring</text>
+  <text x="302" y="617" text-anchor="middle" fill="#8B5CF6" font-size="8">→ score + justification</text>
+
+  <!-- ── Supabase DB ── -->
+  <rect x="430" y="530" width="430" height="140" rx="10" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="450" y="552" fill="#15803D" font-size="11" font-weight="700" letter-spacing="1">SUPABASE · POSTGRESQL</text>
+
+  <!-- DB cylinders -->
+  <ellipse cx="530" cy="572" rx="62" ry="12" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <rect x="468" y="572" width="124" height="56" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <ellipse cx="530" cy="628" rx="62" ry="12" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <text x="530" y="604" text-anchor="middle" fill="#166534" font-size="10" font-weight="600">job_descriptions</text>
+
+  <ellipse cx="680" cy="572" rx="62" ry="12" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <rect x="618" y="572" width="124" height="56" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <ellipse cx="680" cy="628" rx="62" ry="12" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <text x="680" y="604" text-anchor="middle" fill="#166534" font-size="10" font-weight="600">candidates</text>
+
+  <ellipse cx="820" cy="572" rx="38" ry="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <rect x="782" y="572" width="76" height="56" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <ellipse cx="820" cy="628" rx="38" ry="10" fill="#DCFCE7" stroke="#86EFAC" stroke-width="1.2"/>
+  <text x="820" y="604" text-anchor="middle" fill="#166534" font-size="9" font-weight="600">screenings</text>
+
+  <!-- Gemini return arrow back to services -->
+  <path d="M220 580 Q220 470 330 428" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arrowPurple)"/>
+  <text x="180" y="505" fill="#7C3AED" font-size="8">structured JSON</text>
+
+  <!-- Defs -->
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00000018"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#94A3B8"/>
+    </marker>
+    <marker id="arrowGray" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748B"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#A78BFA"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#6EE7B7"/>
+    </marker>
+    <marker id="arrowAmber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#F59E0B"/>
+    </marker>
+  </defs>
+</svg>
