@@ -1,8 +1,8 @@
 :root {
-  --bg-main: #F4F0E6;              /* Warm Vintage Linen Parchment */
-  --bg-card: #FAF8F3;              /* Ivory White Card */
-  --bg-card-hover: #F0EBE0;
-  --border-card: #E5DFD1;
+  --bg-main: #FDE8EF;              /* Light Pink */
+  --bg-card: #FFF0F5;              /* Soft Pink Card */
+  --bg-card-hover: #F9D8E5;
+  --border-card: #F2C4D6;
   --border-card-hover: #1C1815;
   
   --primary: #1C1815;              /* Solid Dark Charcoal Espresso */
@@ -27,11 +27,11 @@
 }
 
 [data-theme="dark"] {
-  --bg-main: #141210;
-  --bg-card: #1C1917;
-  --bg-card-hover: #292524;
-  --border-card: rgba(255, 255, 255, 0.1);
-  --border-card-hover: rgba(255, 255, 255, 0.3);
+  --bg-main: #2D1B2E;              /* Deep Mauve/Plum */
+  --bg-card: #3A2240;              /* Slightly lighter plum card */
+  --bg-card-hover: #4A2D52;
+  --border-card: rgba(253, 200, 220, 0.12);
+  --border-card-hover: rgba(253, 200, 220, 0.35);
   
   --primary: #F4F0E6;
   --primary-hover: #E7E0D3;
