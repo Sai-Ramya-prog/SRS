@@ -1,35 +1,13 @@
-# ============================================================
-# Frontend Requirements - Smart Resume Screener
-# Framework: React 18 + Vite
-# ============================================================
-# To install all dependencies, run:
-#   npm install
-# ============================================================
 
-# ---------- Runtime Dependencies ----------
+react@^18.2.0                  
+react-dom@^18.2.0              
+react-router-dom@^6.20.0       
+axios@^1.6.2                   
+lucide-react@^0.294.0          
+canvas-confetti@^1.9.2         
 
-react@^18.2.0                  # Core React library
-react-dom@^18.2.0              # React DOM renderer
-react-router-dom@^6.20.0       # Client-side routing for React
-axios@^1.6.2                   # HTTP client for API requests
-lucide-react@^0.294.0          # Icon library (React components)
-canvas-confetti@^1.9.2         # Confetti animation effects
 
-# ---------- Dev Dependencies ----------
-
-@vitejs/plugin-react@^4.2.0    # Vite plugin for React (JSX transform + Fast Refresh)
-vite@^5.0.0                    # Next-generation frontend build tool & dev server
-@types/react@^18.2.37          # TypeScript type definitions for React
-@types/react-dom@^18.2.15      # TypeScript type definitions for React DOM
-
-# ============================================================
-# Node.js Version Requirement
-# ============================================================
-# node >= 16.0.0
-# npm  >= 7.0.0
-# ============================================================
-
-# ---------- NPM Scripts ----------
-# npm run dev      -> Start Vite development server (hot reload)
-# npm run build    -> Build production bundle to /dist
-# npm run preview  -> Preview the production build locally
+@vitejs/plugin-react@^4.2.0    
+vite@^5.0.0                    
+@types/react@^18.2.37          
+@types/react-dom@^18.2.15      
