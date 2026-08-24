@@ -470,14 +470,6 @@ smart-resume-screener/
 
 ---
 
-## 🔑 Environment Variables
-
-```
-GEMINI_API_KEY=your_gemini_api_key
-SUPABASE_URL=your_supabase_url
-SUPABASE_KEY=your_supabase_anon_key
-```
-
 ---
 
 ## 📦 Dependencies
