@@ -36,6 +36,8 @@ def read_root():
         "docs": "/docs"
     }
 
+
+
 if __name__ == "__main__":
     import uvicorn
     port = int(os.getenv("PORT", 8000))
